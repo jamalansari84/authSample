@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  width: 230px;
+  height: 45px;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+  background: linear-gradient(to bottom, #1059e2 0%, #0d44a8 100%);
+  color: #fafafa;
+}
+
+.btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+body {
+  font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.logo img {
+  width: 500px;
+  border: 5px solid #333;
+  border-radius: 5px;
+}
+
+form.login div.form-group {
+  width: 500px;
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 3px solid #333;
+  border-radius: 5px;
+}
+
+form.login div.form-group label {
+  margin-right: 10px;
+}
+
+form.login div.form-group input {
+  padding: 5px;
+  border: 0;
+  flex-grow: 1;
+  font-size: 18px;
+  color: #2e2e2e;
+}
+
+form.login button {
+  float: right;
+}
+
+div.error {
+  width: 300px;
+  height: 100px;
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+div.error p {
+  color: tomato;
+}

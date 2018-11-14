@@ -1,0 +1,22 @@
+extends layout
+
+block title
+    title Login
+
+block content
+    .logo
+        img(src="images/logo.jpg", alt="logo")
+    form.login(method='POST' action='/login')
+        .form-group
+            label(for='name') Username:
+            input#user(type="text", name="user" required)
+        .form-group
+            label(for='pass') Password:
+            input#pass(type="password", name="pass" required)
+        button.btn Login
+    .error
+        p= error
+
+    script(src="javascript/login.js")
+    script(type="text/javascript").
+        window.onload = () => setCookie('#{cookie}');
